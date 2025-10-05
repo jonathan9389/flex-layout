@@ -1,153 +1,155 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding:    0;
+    margin:     0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
+    font-family:    'Poppins', sans-serif;
+    display:        flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 36px;
+    max-width:      1200px;
+    margin:         0 auto;
+    gap:            36px;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    min-height: 400px;
+    display:         flex;
+    flex-direction:  column;
+    min-height:      400px;
     justify-content: space-between;
-    padding: 22px;
-    background-color: #1f2937;
+    padding:         22px;
+    background-color:#1f2937;
+    margin-top:      10px;
+    border-radius:   12px;
 }
 
 .nav-content {
-    display: flex;
+    display:         flex;
     justify-content: space-between;
 }
 
 .ul-list {
     list-style: none;
-    display: flex;
-    gap: 12px;
+    display:    flex;
+    gap:        12px;
 }
 
 .hero-content {
-    display: flex;
-    gap: 22px;
+    display:     flex;
+    gap:        22px;
     align-items: center;
 }
 
 img {
-    width: 50%;
-    height: 250px;
-    border-radius: 12px;
+    width:        50%;
+    height:       250px;
+    border-radius:12px;
 }
 
 button {
     margin-top: 22px;
 }
 
-.info-section {
-    display: flex;
-    padding: 22px;
-    align-content: center;
-    gap: 12px;
-    max-width: calc(4 * 270px + 3 * 12px);
-}
-
 iframe {
-    width: 270px;
+    width:  270px;
     height: 300px;
 }
 
 .quote {
-    padding: 48px 22px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-style: italic;
-    background-color: #e5e7eb;
+    padding:         48px 22px;
+    text-align:      center;
+    font-size:       1.5rem;
+    font-style:      italic;
+    background-color:#e5e7eb;
+    border-radius:   10px;
 }
 
 .quote blockquote {
-    margin: 0 auto;
+    margin:    0 auto;
     max-width: 800px;
 }
 
 .quote cite {
-    display: block;
-    margin-top: 24px;
-    font-style: normal;
-    font-weight: bold;
-    text-align: right;
+    display:      block;
+    margin-top:   24px;
+    font-style:   normal;
+    font-weight:  bold;
+    text-align:   right;
 }
 
 .action-section {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    padding: 22px;
+    display:         flex;
+    align-items:     center;
+    gap:             32px;
+    padding:         22px;
     justify-content: center;
 }
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    gap:     22px;
     padding: 22px;
 }
 
 .social-icons {
     display: flex;
-    gap: 12px;
+    gap:     12px;
 }
 
-.footer a {
+a {
     text-decoration: none;
-    color: blue;
+    color:           #3882f6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a:hover {
+    color: rgba(255, 0, 0, 0.697);
 }
 
 button {
-    padding: 18px;
+    padding:   18px;
     font-size: 16px;
-    color: #3882f6;
+    color:     black;
 }
 
 h1 {
-    font-size: 48px;
-    color: #f9faf8;
+    font-size:   48px;
+    color:       #f9faf8;
     font-weight: 900;
 }
 
-.hero-section p, a {
+.hero-section p {
     font-size: 18px;
-    color: #e5e7eb;
+    color:     #e5e7eb;
 }
 
 .logo {
     font-size: 24px;
-    color: #f9faf8;
+    color:     #f9faf8;
 }
 
 .info-section h2 {
-    font-size: 36px;
-    color: #1f2937;
+    font-size:   36px;
+    color:       #1f2937;
     font-weight: 900;
 }
 
-
 @media (max-width:918px) {
     .info-section {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 12px;
-        row-gap: 52px;
+        display:     flex;
+        flex-wrap:   wrap;
+        column-gap:  12px;
+        row-gap:     52px;
     }
 
     .card {
-        flex: 1 1 calc(50% - 6px); /* Half the gap for each side */
-        max-width: calc(50% - 6px);
-        box-sizing: border-box;
+        flex:        1 1 calc(50% - 6px); /* Half the gap for each side */
+        max-width:   calc(50% - 6px);
+        box-sizing:  border-box;
     }
 
     iframe {
@@ -157,8 +159,38 @@ h1 {
 
 @media (max-width: 658px) {
     .footer {
-        display: flex;
+        display:        flex;
         flex-direction: column;
-        gap: 18px;
+        gap:            18px;
     }
+}
+
+.info-section {
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+    padding:        48px 22px;
+    gap:            32px;
+    max-width:      1200px;
+    margin:         0 auto;
+}
+
+.info-text {
+    text-align: center;
+    max-width:  700px;
+    margin:     0 auto;
+}
+
+.cards-row {
+    display:        flex;
+    flex-wrap:      wrap;
+    gap:            24px;
+    justify-content:center;
+    width:          100%;
+}
+
+.card {
+    flex:        1 1 270px;
+    max-width:   270px;
+    box-sizing:  border-box;
 }
