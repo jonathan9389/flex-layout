@@ -206,3 +206,124 @@ h1 {
     max-width:   270px;
     box-sizing:  border-box;
 }
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 600px) {
+    body {
+        max-width: 100vw;
+        gap: 18px;
+        padding: 0 4px;
+    }
+
+    .hero-section {
+        padding: 12px 4px;
+        min-height: 250px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 0 4px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .ul-list {
+        gap: 10px;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .text-block h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-section p,
+    .text-block p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .info-section {
+        padding: 18px 4px;
+        gap: 18px;
+    }
+
+    .info-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-text p {
+        font-size: 1rem;
+    }
+
+    .cards-row {
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 8px 4px;
+    }
+
+    iframe {
+        height: 180px;
+    }
+
+    .quote {
+        padding: 18px 4px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .action-section {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 4px;
+        border-radius: 8px;
+        max-width: 98vw;
+    }
+
+    .action-section .text-block h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .action-section .text-block p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 4px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 8px;
+        justify-content: center;
+    }
+}
